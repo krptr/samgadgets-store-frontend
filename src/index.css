@@ -1,0 +1,553 @@
+/* ==========================================================================
+   SAM GADGETS — TAILWIND CSS v4 DESIGN SYSTEM
+   ========================================================================== */
+
+/* 1. GOOGLE FONTS (DM Sans for UI, Instrument Serif for titles, Tektur for logo/wordmark) */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400..700;1,9..40,400..700&family=Instrument+Serif:ital@0;1&family=Tektur:wght@500;700;900&display=swap");
+
+/* 2. TAILWIND v4 CORE */
+@import "tailwindcss";
+
+/* 3. DARK MODE VARIANT (Activated by adding className="dark" to the <html> tag) */
+@custom-variant dark (&:is(.dark *));
+
+/* 4. TAILWIND v4 THEME TOKENS (Maps variables to utility classes like bg-primary, font-tech, etc.) */
+@theme inline {
+  /* --- Border Radius Scale --- */
+  --radius-sm: calc(
+    var(--radius) - 4px
+  ); /* Use on: small tags, badge pills, checkbox handles (rounded-sm) */
+  --radius-md: calc(
+    var(--radius) - 2px
+  ); /* Use on: input boxes, dropdown selectors, icon buttons (rounded-md) */
+  --radius-lg: var(
+    --radius
+  ); /* Use on: primary buttons, product cards, modal dialogs (rounded-lg) */
+  --radius-xl: calc(
+    var(--radius) + 4px
+  ); /* Use on: large banners, preview containers, drawers (rounded-xl) */
+  --radius-2xl: calc(
+    var(--radius) + 8px
+  ); /* Use on: featured hero boxes, quick-view popup cards (rounded-2xl) */
+  --radius-3xl: calc(
+    var(--radius) + 12px
+  ); /* Use on: oversized device showcase frames (rounded-3xl) */
+  --radius-4xl: calc(
+    var(--radius) + 16px
+  ); /* Use on: pill containers, floating action bars (rounded-4xl) */
+
+  /* --- Colors (Semantic Core Utilities) --- */
+  --color-background: var(
+    --background
+  ); /* Use on: page root container (<main className="bg-background">) */
+  --color-foreground: var(
+    --foreground
+  ); /* Use on: main body text, primary headings, icons (<p className="text-foreground">) */
+  --color-card: var(
+    --card
+  ); /* Use on: ProductCard wrapper, KPI metric tile (<div className="bg-card">) */
+  --color-card-foreground: var(
+    --card-foreground
+  ); /* Use on: text inside cards, product names, KPI values */
+  --color-popover: var(
+    --popover
+  ); /* Use on: search modal box, user menu dropdown flyout (<div className="bg-popover">) */
+  --color-popover-foreground: var(
+    --popover-foreground
+  ); /* Use on: text inside dropdown menus & search results */
+  --color-primary: var(
+    --primary
+  ); /* Use on: "Add to Cart" button, checkout CTA, brand dot (<span className="text-primary">·</span>) */
+  --color-primary-foreground: var(
+    --primary-foreground
+  ); /* Use on: white text/icons inside primary buttons */
+  --color-primary-soft: var(
+    --primary-soft
+  ); /* Use on: selected spec chip background (e.g. "Pro 512GB"), active filter tag */
+  --color-secondary: var(
+    --secondary
+  ); /* Use on: "View Details" button, quantity buttons, secondary admin filters */
+  --color-secondary-foreground: var(
+    --secondary-foreground
+  ); /* Use on: text/icons inside secondary buttons */
+  --color-muted: var(
+    --muted
+  ); /* Use on: skeleton loading placeholders, disabled button background, meter track */
+  --color-muted-foreground: var(
+    --muted-foreground
+  ); /* Use on: device specs subtitle, review count, shipping note, footer copyright */
+  --color-accent: var(
+    --accent
+  ); /* Use on: hovered item in dropdown, active nav link tab */
+  --color-accent-foreground: var(
+    --accent-foreground
+  ); /* Use on: text of hovered navigation link or dropdown item */
+  --color-destructive: var(
+    --destructive
+  ); /* Use on: "Remove item" trash button, "Out of Stock" pill, "Action needed" banner */
+  --color-destructive-foreground: var(
+    --destructive-foreground
+  ); /* Use on: white text inside destructive badges & error toasts */
+  --color-success: var(
+    --success
+  ); /* Use on: "In Stock" indicator dot, "Order Placed" checkmark, positive delta badge (+18.4%) */
+  --color-success-foreground: var(
+    --success-foreground
+  ); /* Use on: text inside green success notifications & badges */
+  --color-warning: var(
+    --warning
+  ); /* Use on: "Only 2 left in stock" urgency badge, amber restock warning tag */
+  --color-warning-foreground: var(
+    --warning-foreground
+  ); /* Use on: dark text inside yellow warning badges */
+
+  /* --- Brand Accents & Identity --- */
+  --color-ink: var(
+    --ink
+  ); /* Use on: dark announcement top-bar, dark footer background section */
+  --color-ink-foreground: var(
+    --ink-foreground
+  ); /* Use on: text inside dark announcement bar & dark footer */
+  --color-cream: var(
+    --cream
+  ); /* Use on: VIP member promo strip, editorial quote callout card */
+  --color-olive: var(
+    --olive
+  ); /* Use on: certified refurbished badge, eco-packaging tag */
+  --color-faq-active: var(
+    --faq-active
+  ); /* Use on: active accordion header background in FAQ sections */
+
+  /* --- Form & Interactive Controls --- */
+  --color-border: var(
+    --border
+  ); /* Use on: card border line, header bottom separator (<div className="border border-border">) */
+  --color-input: var(
+    --input
+  ); /* Use on: search input border, form text box outline (<input className="border-input">) */
+  --color-ring: var(
+    --ring
+  ); /* Use on: accessibility focus outline on keyboard tab (<button className="focus:ring-ring">) */
+  --color-ring-offset-background: var(
+    --background
+  ); /* Use on: focus ring offset spacer behind outline */
+
+  /* --- VIP Club Surfaces & Exclusive Tiers --- */
+  --color-vip-section: var(
+    --vip-section
+  ); /* Use on: VIP membership banner wrapper (<section className="bg-vip-section">) */
+  --color-vip-surface: var(
+    --vip-surface
+  ); /* Use on: VIP exclusive discount card, membership tier pass container */
+  --color-vip-foreground: var(
+    --vip-foreground
+  ); /* Use on: high-contrast headline & copy inside VIP cards */
+  --color-vip-muted: var(
+    --vip-muted
+  ); /* Use on: secondary member benefits list, VIP terms disclaimer */
+  --color-vip-border: var(
+    --vip-border
+  ); /* Use on: luxury metallic edge borders on VIP promotional badges */
+
+  /* --- Admin Analytics & BI Data Visualizations --- */
+  --color-chart-1: var(
+    --chart-1
+  ); /* Use on: Primary series bar chart (Gross Revenue, today's order peaks) */
+  --color-chart-2: var(
+    --chart-2
+  ); /* Use on: Secondary comparative metric (Visitors volume, traffic acquisition bars) */
+  --color-chart-3: var(
+    --chart-3
+  ); /* Use on: Margin & Conversion indicators (Net Profit trend, high-conversion pills) */
+  --color-chart-4: var(
+    --chart-4
+  ); /* Use on: Inventory alert markers (Low stock bars, exit-intent survey warnings) */
+  --color-chart-5: var(
+    --chart-5
+  ); /* Use on: Multi-channel category ring donut (Audio, Wearables, Spatial segment) */
+
+  /* --- Admin Shell & Navigation Sidebar --- */
+  --color-sidebar: var(
+    --sidebar
+  ); /* Use on: admin navigation rail background (<aside className="bg-sidebar">) */
+  --color-sidebar-foreground: var(
+    --sidebar-foreground
+  ); /* Use on: navigation link labels, admin panel titles */
+  --color-sidebar-primary: var(
+    --sidebar-primary
+  ); /* Use on: active navigation item indicator pill, active section badge */
+  --color-sidebar-primary-foreground: var(
+    --sidebar-primary-foreground
+  ); /* Use on: white text/icon inside active navigation indicator */
+  --color-sidebar-accent: var(
+    --sidebar-accent
+  ); /* Use on: hovered item background in admin sidebar (<div className="hover:bg-sidebar-accent">) */
+  --color-sidebar-accent-foreground: var(
+    --sidebar-accent-foreground
+  ); /* Use on: highlighted text inside hovered sidebar row */
+  --color-sidebar-border: var(
+    --sidebar-border
+  ); /* Use on: vertical separator between admin rail and dashboard canvas */
+  --color-sidebar-ring: var(
+    --sidebar-ring
+  ); /* Use on: focus outline for admin keyboard navigation */
+
+  /* --- Font Families --- */
+  --font-sans:
+    "DM Sans", ui-sans-serif, system-ui, sans-serif; /* Use on: standard body, navigation links, specs, prices (<body className="font-sans">) */
+  --font-display:
+    "Instrument Serif", ui-serif, Georgia, serif; /* Use on: section headings, editorial hero statements (<h2 className="font-display">) */
+  --font-tech:
+    "Tektur", "DM Sans", ui-sans-serif, sans-serif; /* Use on: sci-fi wordmark, big KPI numbers (<span className="font-tech">) */
+  --font-mono:
+    ui-monospace, SFMono-Regular, Menlo, monospace; /* Use on: order tracking IDs (SAM-48120), device SKU codes, timestamps */
+
+  /* --- Shadows --- */
+  --shadow-elevated: 0 24px 60px -24px oklch(0.2 0.05 265 / 0.28); /* Use on: floating hero phone/laptop image, quick-view popup modal */
+  --shadow-card: 0 2px 10px -4px oklch(0.2 0.05 265 / 0.14); /* Use on: hover state of product cards, elevated KPI tiles */
+}
+
+/* 5. LIGHT THEME VALUES */
+:root {
+  --radius: 0.375rem; /* Base corner radius: 6px */
+  --background: oklch(1 0 0); /* Pure white canvas */
+  --foreground: oklch(0.18 0.02 264); /* Dark charcoal-navy text */
+  --card: oklch(1 0 0); /* White card background */
+  --card-foreground: oklch(0.18 0.02 264); /* Text inside white cards */
+  --popover: oklch(1 0 0); /* Dropdown flyout surface */
+  --popover-foreground: oklch(0.18 0.02 264); /* Text inside dropdown flyout */
+  --primary: oklch(0.532 0.246 262.9); /* Electric Cobalt Blue (#0B5CFF) */
+  --primary-foreground: oklch(1 0 0); /* White button text */
+  --primary-soft: oklch(0.955 0.025 262.9); /* Pale ice-blue chip background */
+  --secondary: oklch(0.968 0.006 264); /* Light gray button background */
+  --secondary-foreground: oklch(
+    0.2 0.02 264
+  ); /* Dark text inside light gray button */
+  --muted: oklch(
+    0.972 0.005 264
+  ); /* Subtle surface for table rows & empty tracks */
+  --muted-foreground: oklch(
+    0.52 0.02 264
+  ); /* Mid-gray for secondary specs / hints */
+  --accent: oklch(0.955 0.025 262.9); /* Hover highlight on dropdown items */
+  --accent-foreground: oklch(0.42 0.2 262.9); /* Blue text for hovered item */
+  --destructive: oklch(
+    0.58 0.235 25
+  ); /* Alert red for errors / delete / stock warning */
+  --destructive-foreground: oklch(1 0 0); /* White text on red alerts */
+  --success: oklch(
+    0.6 0.15 155
+  ); /* Emerald green for in-stock & positive deltas */
+  --success-foreground: oklch(1 0 0); /* White text on green badges */
+  --warning: oklch(0.78 0.16 75); /* Amber for low stock */
+  --warning-foreground: oklch(0.24 0.04 75); /* Dark text on amber badges */
+
+  --ink: oklch(0.17 0.015 264); /* Deep midnight black surface */
+  --ink-foreground: oklch(0.98 0.003 264); /* White text on dark surface */
+  --cream: oklch(0.955 0.017 85); /* Soft warm cream container */
+  --olive: oklch(0.52 0.06 120); /* Olive green accent tag */
+
+  /* VIP Club (Light Mode) */
+  --vip-section: oklch(
+    0.965 0.009 256
+  ); /* Soft cool platinum section background */
+  --vip-surface: oklch(
+    0.985 0.006 256
+  ); /* Pristine white-gold member card surface */
+  --vip-foreground: oklch(0.18 0.02 264); /* Deep text contrast for perks */
+  --vip-muted: oklch(
+    0.43 0.025 264
+  ); /* Subdued secondary text for membership terms */
+  --vip-border: oklch(
+    0.86 0.018 256
+  ); /* Delicate border stroke around VIP modules */
+  --faq-active: oklch(
+    0.967 0.018 257
+  ); /* Active highlight for opened accordion */
+
+  --border: oklch(0.915 0.008 264); /* Light gray card & grid border */
+  --input: oklch(0.915 0.008 264); /* Input field outline border */
+  --ring: oklch(0.532 0.246 262.9); /* Focus outline ring color */
+
+  /* Analytics & Chart Visualizations (Light Mode) */
+  --chart-1: oklch(
+    0.532 0.246 262.9
+  ); /* Electric blue bars (Gross Revenue / Volume) */
+  --chart-2: oklch(
+    0.7 0.13 250
+  ); /* Cyan-sky blue (Visitor count / Acquisition) */
+  --chart-3: oklch(
+    0.52 0.06 120
+  ); /* Olive-sage green (Net Profit / Conversion Rate) */
+  --chart-4: oklch(
+    0.78 0.16 75
+  ); /* Amber gold (Low Stock Alert / Drop-off Rate) */
+  --chart-5: oklch(
+    0.6 0.15 155
+  ); /* Mint green (Fulfillment Delivered / Repeat VIPs) */
+
+  /* Admin Sidebar (Light Mode - Midnight Aesthetic) */
+  --sidebar: oklch(
+    0.17 0.015 264
+  ); /* Sleek midnight rail contrasting with light canvas */
+  --sidebar-foreground: oklch(
+    0.93 0.005 264
+  ); /* Soft light gray text for admin links */
+  --sidebar-primary: oklch(
+    0.532 0.246 262.9
+  ); /* Cobalt blue badge on selected route */
+  --sidebar-primary-foreground: oklch(
+    1 0 0
+  ); /* Crisp white text on active item */
+  --sidebar-accent: oklch(0.25 0.02 264); /* Subtle hovered button background */
+  --sidebar-accent-foreground: oklch(
+    0.98 0.003 264
+  ); /* White text on hovered navigation link */
+  --sidebar-border: oklch(
+    0.28 0.02 264
+  ); /* Border separating sidebar from main viewport */
+  --sidebar-ring: oklch(
+    0.532 0.246 262.9
+  ); /* Focus ring for admin keyboard controls */
+}
+
+/* 6. DARK THEME VALUES (Active when <html class="dark">) */
+.dark {
+  --background: oklch(
+    0.17 0.015 264
+  ); /* Deep midnight space canvas (~#12151C) */
+  --foreground: oklch(0.98 0.003 264); /* Crisp off-white text */
+  --card: oklch(0.21 0.018 264); /* Lifted dark card surface */
+  --card-foreground: oklch(0.98 0.003 264); /* Text inside dark cards */
+  --popover: oklch(0.21 0.018 264); /* Lifted dropdown surface */
+  --popover-foreground: oklch(0.98 0.003 264); /* Text inside dark dropdowns */
+  --primary: oklch(
+    0.6 0.22 262.9
+  ); /* High-vibrancy cobalt blue for dark mode */
+  --primary-foreground: oklch(1 0 0); /* White text on primary button */
+  --primary-soft: oklch(
+    0.28 0.06 262.9
+  ); /* Dark blue tint for selected spec tag */
+  --secondary: oklch(0.27 0.02 264); /* Dark button surface */
+  --secondary-foreground: oklch(0.98 0.003 264); /* White text on dark button */
+  --muted: oklch(
+    0.27 0.02 264
+  ); /* Muted background for skeleton bars & empty tracks */
+  --muted-foreground: oklch(
+    0.72 0.02 264
+  ); /* Soft light-gray for secondary specs */
+  --accent: oklch(0.28 0.06 262.9); /* Dark blue hover highlight */
+  --accent-foreground: oklch(0.9 0.05 262.9); /* Bright blue text on hover */
+  --border: oklch(1 0 0 / 12%); /* Translucent 12% white card border */
+  --input: oklch(1 0 0 / 16%); /* Translucent 16% white input border */
+
+  /* VIP Club (Dark Mode) */
+  --vip-section: oklch(0.14 0.013 264); /* Deeper black section frame */
+  --vip-surface: oklch(0.11 0.012 264); /* Obsidian VIP card surface */
+  --vip-foreground: oklch(
+    0.98 0.003 264
+  ); /* Bright white membership perks text */
+  --vip-muted: oklch(0.73 0.016 264); /* Platinum muted copy */
+  --vip-border: oklch(1 0 0 / 18%); /* Translucent frosted metallic border */
+  --faq-active: oklch(0.24 0.035 262); /* Deep blue-tinted open accordion row */
+}
+
+/* 7. VIP PROMOTIONAL GRADIENT OVERLAY */
+.vip-image-fade {
+  background: linear-gradient(
+    to bottom,
+    var(--vip-surface) 0%,
+    transparent 42%,
+    transparent 80%
+  );
+}
+
+@media (min-width: 1024px) {
+  .vip-image-fade {
+    background: linear-gradient(
+      to right,
+      var(--vip-surface) 0%,
+      transparent 48%
+    );
+  }
+}
+
+/* 8. BASE HTML ELEMENT STYLING */
+@layer base {
+  * {
+    border-color: var(
+      --color-border
+    ); /* Gives all borders the subtle border color by default */
+  }
+
+  body {
+    background-color: var(
+      --color-background
+    ); /* Sets the main page background color */
+    color: var(--color-foreground); /* Sets the primary readable text color */
+    font-family: var(--font-sans); /* Defaults all copy to DM Sans */
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(
+      --font-display
+    ); /* Defaults headings to Instrument Serif unless overridden with font-tech */
+    font-weight: 400;
+    letter-spacing: -0.01em;
+  }
+}
+
+/* 9. CUSTOM UTILITIES & ANIMATIONS */
+
+/* Use on: small uppercase kicker label above section titles:
+   Example: <span className="text-eyebrow text-primary">FLAGSHIP HARDWARE</span> */
+@utility text-eyebrow {
+  font-size: 0.6875rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+/* Use on: hero dark scrim gradient overlay behind hardware visuals */
+@utility hero-scrim {
+  background: linear-gradient(
+    100deg,
+    oklch(0.17 0.015 264 / 0.82) 0%,
+    oklch(0.17 0.015 264 / 0.45) 45%,
+    oklch(0.17 0.015 264 / 0.05) 80%
+  );
+}
+
+/* Use on: absolute background container behind hero devices:
+   Example: <div className="hero-grid absolute inset-0 -z-10" /> */
+@utility hero-grid {
+  background-image:
+    linear-gradient(to right, oklch(1 0 0 / 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, oklch(1 0 0 / 0.06) 1px, transparent 1px);
+  background-size: 64px 64px;
+  mask-image: radial-gradient(
+    ellipse 70% 60% at 50% 40%,
+    black 30%,
+    transparent 75%
+  );
+}
+
+/* Use on: ambient glowing blue blur positioned directly behind flagship gadget photos:
+   Example: <div className="glow-orb absolute w-96 h-96 -z-10 rounded-full" /> */
+@utility glow-orb {
+  background: radial-gradient(
+    circle,
+    color-mix(in oklab, var(--primary) 70%, transparent) 0%,
+    transparent 65%
+  );
+  filter: blur(40px);
+  animation: orb-drift 14s ease-in-out infinite alternate;
+}
+
+/* Use on: shimmering animated headline or promo badge text:
+   Example: <span className="text-shine font-bold">LIMITED EDITION</span> */
+@utility text-shine {
+  background: linear-gradient(
+    100deg,
+    var(--foreground) 20%,
+    var(--primary) 45%,
+    var(--foreground) 70%
+  );
+  background-size: 220% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shine 7s linear infinite;
+}
+
+/* Use on: giant decorative hollow background typography:
+   Example: <span className="outline-word text-8xl font-black select-none">GADGETS</span> */
+@utility outline-word {
+  color: transparent;
+  -webkit-text-stroke: 1px
+    color-mix(in oklab, var(--foreground) 22%, transparent);
+}
+
+/* Use on: continuously sliding marquee ticker container for brand logos or perks:
+   Example: <div className="marquee flex gap-8 whitespace-nowrap">...</div> */
+@utility marquee {
+  animation: marquee 38s linear infinite;
+}
+
+/* Use on: hero product images to give them a gentle floating levitation effect:
+   Example: <img src={devicePhoto} className="float-slow drop-shadow-2xl" alt="Phone" /> */
+@utility float-slow {
+  animation: float 9s ease-in-out infinite;
+}
+
+/* Use on: urgent low-stock pill indicators & warning badges to pulse red:
+   Example: <span className="stock-alert px-2 py-0.5 rounded text-xs text-destructive font-medium">Only 2 Left</span> */
+@utility stock-alert {
+  animation: stock-flash 1.1s ease-in-out infinite;
+}
+
+@utility device-stage {
+  background: transparent;
+}
+
+/* --- Keyframe Definitions --- */
+@keyframes orb-drift {
+  from {
+    transform: translate3d(-6%, -4%, 0) scale(1);
+  }
+  to {
+    transform: translate3d(8%, 6%, 0) scale(1.15);
+  }
+}
+
+@keyframes shine {
+  from {
+    background-position: 120% 0;
+  }
+  to {
+    background-position: -120% 0;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-14px);
+  }
+}
+
+@keyframes stock-flash {
+  0%,
+  100% {
+    background-color: color-mix(in oklab, var(--destructive) 10%, transparent);
+  }
+  50% {
+    background-color: color-mix(in oklab, var(--destructive) 26%, transparent);
+  }
+}
+
+/* --- Reduced Motion Optimization --- */
+@media (prefers-reduced-motion: reduce) {
+  .marquee,
+  .float-slow,
+  .glow-orb,
+  .text-shine,
+  .stock-alert {
+    animation: none;
+  }
+}

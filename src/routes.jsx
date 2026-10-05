@@ -4,6 +4,8 @@ import { AdminDashboard } from "./pages/admin/dashboard/Dashboard";
 import { SubscribersList } from "./pages/admin/subscriptions/Subscription";
 import { Orders } from "./pages/admin/orders/Orders";
 import { Inventory } from "./pages/admin/inventory/Inventory";
+import { AdminLogin } from "./pages/admin/auth/Login";
+import { DemoLogin } from "./pages/demo/DemoLogin";
 import { HomePage } from "./pages/home/HomePage";
 import { ProductsPage } from "./pages/shop/ProductsPage";
 import { CartPage } from "./pages/cart/CartPage";
@@ -36,6 +38,28 @@ const routes = [
   },
   {
     path: "/admin",
+    element: <AdminLayout />,
+    errorElement: <ErrorPage />,
+    children: [
+      { index: true, element: <AdminDashboard /> },
+      { path: "subscriberslist", element: <SubscribersList /> },
+      { path: "orders", element: <Orders /> },
+      { path: "inventory", element: <Inventory /> },
+      { path: "*", element: <NotFoundPage /> },
+    ],
+  },
+  {
+    path: "/admin/login",
+    element: <AdminLogin />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/demo/login",
+    element: <DemoLogin />,
+    errorElement: <ErrorPage />,
+  },
+  {
+    path: "/demo",
     element: <AdminLayout />,
     errorElement: <ErrorPage />,
     children: [

@@ -1,12 +1,12 @@
 import { Outlet } from "react-router";
-import { PromoHeadline } from "./components/PromoHeadline";
+import { AnnouncementBar } from "./components/AnnouncementBar";
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
 
 function App() {
   return (
     <>
-      <PromoHeadline />
+      <AnnouncementBar />
       <Navbar />
       <main>
         <Outlet />

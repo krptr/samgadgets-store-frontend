@@ -1,9 +1,9 @@
 import { Link } from "react-router";
-function NotFoundPage() {
+function NotFoundPage({ homePath = "/" }) {
   return (
     <div>
       <h1>Page Not Found</h1>
-      <Link to="/">Go Back Home</Link>
+      <Link to={homePath}>Go Back Home</Link>
     </div>
   );
 }

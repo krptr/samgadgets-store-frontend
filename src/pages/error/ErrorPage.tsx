@@ -1,9 +1,9 @@
 import { Link } from "react-router";
-function ErrorPage() {
+function ErrorPage({ homePath = "/" }) {
   return (
     <div>
       <h1>Something Went wrong</h1>
-      <Link to="/">Go Back Home</Link>
+      <Link to={homePath}>Go Back Home</Link>
     </div>
   );
 }

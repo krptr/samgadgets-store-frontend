@@ -6,8 +6,10 @@ import { Footer } from "./components/Footer";
 function App() {
   return (
     <>
-      <AnnouncementBar />
-      <Navbar />
+      <div className="relative">
+        <AnnouncementBar />
+        <Navbar />
+      </div>
       <main>
         <Outlet />
       </main>

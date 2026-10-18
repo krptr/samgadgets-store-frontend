@@ -1,8 +1,10 @@
+import { HeroSection } from "./components/HeroSection";
+
 function HomePage() {
   return (
-    <div>
-      <h1>HomePage</h1>
-    </div>
+    <>
+      <HeroSection />
+    </>
   );
 }
 

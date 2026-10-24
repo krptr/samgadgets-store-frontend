@@ -7,7 +7,7 @@ function Logo({ className = "" }: { className?: string }) {
         <span className="font-tech">
           <span className="text-primary">SAM</span>
           <span></span>
-          <span className="text-foreground">GADGETS</span>
+          <span className="text-on-surface">GADGETS</span>
         </span>
       </Link>
     </div>

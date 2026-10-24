@@ -13,7 +13,7 @@ function Navbar() {
     <header className="absolute flex justify-between py-2 mx-4 xl:flex xl:items-center xl:justify-center xl:gap-46 inset-x-0 top-full z-50">
       <Logo className="md:text-3xl" />
 
-      <nav className="hidden xl:flex gap-6 py-4 font-sans font-bold">
+      <nav className="hidden xl:flex xl:items-center gap-6 py-4 font-sans font-bold">
         <NavLink
           to="/products"
           className={({ isActive }) => (isActive ? "text-primary" : "")}
@@ -52,7 +52,14 @@ function Navbar() {
         <button onClick={toggleTheme} className="cursor-pointer">
           {theme === "dark" ? <LuMoon /> : <LuSun />}
         </button>
-        <NavLink to="/login">Sign in</NavLink>
+
+        <NavLink
+          to="/login"
+          className={`py-2 px-3 text-on-primary bg-primary rounded-2xl`}
+        >
+          Sign in
+        </NavLink>
+
         <button>
           <LuShoppingBag />
         </button>

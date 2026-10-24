@@ -31,7 +31,7 @@ function MobileNavBar({
         className={`fixed inset-0 bg-black/50  ${isOpen ? "opacity-100" : "pointer-events-none opacity-0"}`}
       />
       <nav
-        className={`fixed left-0 transition-transform duration-300 w-17/20 inset-y-0 px-4 pt-4 bg-background flex gap-5 flex-col [&_svg]:text-primary xl:hidden ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
+        className={`fixed left-0 transition-transform duration-300 w-17/20 inset-y-0 px-4 pt-4 bg-surface flex gap-5 flex-col [&_svg]:text-primary xl:hidden ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
       >
         <button
           onClick={closeMobileNav}

@@ -20,7 +20,6 @@ function useMobileNav() {
     setLastUrl(currentUrl);
     setIsMobileNavOpen(false);
   }
-  console.log("render", { currentUrl, lastUrl });
 
   return { isMobileNavOpen, updateMobileNav, closeMobileNav };
 }

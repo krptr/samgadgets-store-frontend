@@ -1,11 +1,13 @@
 import { HeroSection } from "./components/HeroSection";
-import { ExtraDetail } from "./components/ExtraDetails";
+import { WhyChooseUs } from "./components/WhyChooseUs";
+import { Categories } from "./components/Categories";
 
 function HomePage() {
   return (
     <>
       <HeroSection />
-      <ExtraDetail />
+      <WhyChooseUs />
+      <Categories />
     </>
   );
 }

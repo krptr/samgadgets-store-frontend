@@ -1,5 +1,6 @@
 import phone from "../../../assets/hero/phones.png";
 import { useNavigate } from "react-router";
+import { Button } from "../../../components/Button";
 // import laptop from "../../../assets/hero/laptop.png";
 // import earbuds from "../../../assets/hero/earbuds.png";
 // import smartwatch from "../../../assets/hero/smartwatch.png";
@@ -27,20 +28,14 @@ function HeroSection() {
           </p>
 
           {/* Hero CTAs */}
-          <div className="flex flex-col md:flex-row gap-4 items-center justify-center">
-            <button
-              onClick={() => navigate("/products")}
-              className="rounded-3xl bg-primary px-6 py-3 font-tech text-sm text-on-primary transition-transform duration-300 hover:scale-105"
-            >
+          <div className="flex flex-col md:flex-row gap-4 items-center justify-center mb-4">
+            <Button to="/products" callToAction={true}>
               Shop all devices
-            </button>
+            </Button>
 
-            <button
-              onClick={() => navigate("/signup")}
-              className="rounded-3xl border border-outline-variant px-6 py-3 font-tech text-sm transition-colors hover:text-primary"
-            >
+            <Button variant="outline" to="/signup" callToAction={true}>
               Join Rewards
-            </button>
+            </Button>
           </div>
         </div>
       </div>

@@ -220,6 +220,22 @@
   );
 }
 
+/* Darkens the bottom of a photo so white text stays readable */
+@utility image-scrim {
+  background: linear-gradient(
+    to top,
+    rgb(18 19 24 / 0.55) 0%,
+    rgb(18 19 24 / 0.25) 50%,
+    rgb(18 19 24 / 0) 100%
+  );
+}
+
+/* Blurs what is behind it, fading out toward the top */
+@utility image-blur {
+  backdrop-filter: blur(6px);
+  mask-image: linear-gradient(to top, black 0%, black 40%, transparent 100%);
+}
+
 /* Low-stock flash (brief: below 10 units) */
 @utility stock-alert {
   animation: stock-flash 1.1s ease-in-out infinite;

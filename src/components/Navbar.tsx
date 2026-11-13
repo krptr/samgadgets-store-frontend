@@ -29,7 +29,7 @@ function Navbar() {
     <header
       className={`fixed inset-x-0 z-50 ${onScrolled ? "bg-surface-variant top-0" : "top-10"}`}
     >
-      <div className="flex justify-between py-2 mx-4 md:mx-12 lg:mx-24 xl:mx-32 xl:flex xl:items-center xl:gap-46">
+      <div className="flex justify-between py-2 mx-4 md:mx-8 xl:mx-32 xl:flex xl:items-center xl:gap-46">
         <Logo className="md:text-3xl" />
 
         <nav className="hidden xl:flex xl:items-center gap-6 py-4 font-sans font-bold">

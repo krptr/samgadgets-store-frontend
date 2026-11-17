@@ -27,7 +27,7 @@ function Navbar() {
 
   return (
     <header
-      className={`fixed inset-x-0 z-50 ${onScrolled ? "bg-surface-variant top-0" : "top-10"}`}
+      className={`fixed inset-x-0 z-50 ${onScrolled ? "bg-on-tertiary top-0" : "top-10"}`}
     >
       <div className="flex justify-between py-2 mx-4 md:mx-8 xl:mx-32 xl:flex xl:items-center xl:gap-46">
         <Logo className="md:text-3xl" />

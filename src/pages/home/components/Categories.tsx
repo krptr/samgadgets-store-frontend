@@ -1,11 +1,8 @@
-import laptopAvif from "../../../assets/category/laptop.avif";
-import laptopWebp from "../../../assets/category/laptop.webp";
-import phoneAvif from "../../../assets/category/phones.avif";
-import phoneWebp from "../../../assets/category/phones.webp";
-import audioAvif from "../../../assets/category/audio.avif";
-import audioWebp from "../../../assets/category/audio.webp";
-import watchAvif from "../../../assets/category/watch.avif";
-import watchWebp from "../../../assets/category/watch.webp";
+import audio from "../../../assets/category/audios-1.png";
+import laptop from "../../../assets/category/laptop-1.png";
+import watch from "../../../assets/category/watch-1.png";
+import phone from "../../../assets/category/phones-1.png";
+
 import { Button } from "../../../components/Button";
 import { Link } from "react-router";
 
@@ -47,8 +44,7 @@ interface CategoriesRowProps {
   description: string;
   highlights: string[];
   image: {
-    avif: string;
-    webp: string;
+    url: string;
     alt: string;
   };
   reverse?: boolean;
@@ -73,7 +69,7 @@ const categories = [
       "High-resolution displays",
       "Configurations with different RAM capacities",
     ],
-    image: { avif: laptopAvif, webp: laptopWebp, alt: "A laptop" },
+    image: { url: laptop, alt: "A laptop" },
     buttonLabel: "View Laptops",
     to: "/products",
     imageDetails: {
@@ -94,7 +90,7 @@ const categories = [
       "Fast charging and long-lasting batteries",
       "Powerful processors",
     ],
-    image: { avif: phoneAvif, webp: phoneWebp, alt: "A phone" },
+    image: { url: phone, alt: "A phone" },
     buttonLabel: "View Phones",
     to: "/products",
     imageDetails: {
@@ -114,7 +110,7 @@ const categories = [
       "Crystal-clear calls",
       "Active noise cancellation",
     ],
-    image: { avif: audioAvif, webp: audioWebp, alt: "A Headphone" },
+    image: { url: audio, alt: "A Headphone" },
     buttonLabel: "View Audios",
     to: "/products",
     imageDetails: {
@@ -134,7 +130,7 @@ const categories = [
       "Health monitoring sensors",
       "Smart notifications",
     ],
-    image: { avif: watchAvif, webp: watchWebp, alt: "A watch" },
+    image: { url: watch, alt: "A watch" },
     buttonLabel: "View Wearables",
     to: "/products",
     imageDetails: {
@@ -156,20 +152,17 @@ function CategoriesRow({
   to,
 }: CategoriesRowProps) {
   return (
-    <div className="grid lg:grid-cols-2 gap-8 lg:gap-24">
+    <div className="grid lg:grid-cols-5 gap-8 lg:gap-24">
       <Link
         to={to}
-        className={`group ${reverse ? "" : "lg:order-last"} relative block rounded-xl overflow-hidden`}
+        className={`group ${reverse ? "" : "lg:order-last"} relative block rounded-xl overflow-hidden col-span-3 bg-primary/50`}
       >
-        <picture>
-          <source srcSet={image.avif} type="image/avif" />
-          <source srcSet={image.webp} type="image/webp" />
-          <img
-            src={image.webp}
-            alt={image.alt}
-            className="w-full h-auto rounded-lg transition-transform duration-500 ease-out group-hover:scale-105"
-          />
-        </picture>
+        <img
+          src={image.url}
+          alt={image.alt}
+          className="w-full h-auto rounded-lg transition-transform duration-500 ease-out group-hover:scale-105 drop-shadow-2xl"
+        />
+
         <div className="image-blur pointer-events-none absolute inset-x-0 bottom-0 h-2/5" />
         <div className="image-scrim pointer-events-none absolute inset-x-0 bottom-0 h-2/5" />
 
@@ -182,7 +175,7 @@ function CategoriesRow({
         </div>
       </Link>
 
-      <div>
+      <div className="col-span-2">
         <h3 className="text-3xl lg:text-4xl font-sans mb-3">{title}</h3>
         <p className="text-md mb-6">{description}</p>
         <div>

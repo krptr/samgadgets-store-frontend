@@ -1,5 +1,6 @@
 import type { ComponentProps } from "react";
 import { Link } from "react-router";
+import { twMerge } from "tailwind-merge"; // 1. Import twMerge
 
 type BaseProps = {
   variant?: "primary" | "outline";
@@ -19,9 +20,14 @@ const variants = {
 function getClasses(
   variant: "primary" | "outline",
   callToAction: boolean,
-  className: string,
+  className?: string,
 ) {
-  return `inline-flex items-center justify-center rounded-2xl px-6 py-2 font-tech text-sm ${callToAction ? "lg:text-lg" : ""} cursor-pointer disabled:opacity-50 disabled:pointer-events-none ${variants[variant]} ${className}`;
+  return twMerge(
+    "inline-flex items-center justify-center rounded-2xl px-6 py-2 font-tech text-sm cursor-pointer disabled:opacity-50 disabled:pointer-events-none",
+    callToAction && "lg:text-lg",
+    variants[variant],
+    className,
+  );
 }
 
 function Button(props: ButtonProps) {
@@ -29,7 +35,7 @@ function Button(props: ButtonProps) {
     const {
       variant = "primary",
       callToAction = false,
-      className = "",
+      className,
       children,
       ...rest
     } = props;
@@ -43,7 +49,7 @@ function Button(props: ButtonProps) {
   const {
     variant = "primary",
     callToAction = false,
-    className = "",
+    className,
     children,
     ...rest
   } = props;

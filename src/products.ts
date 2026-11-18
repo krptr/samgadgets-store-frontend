@@ -60,7 +60,7 @@ export const PRODUCTS: Product[] = [
     priceCents: 349900,
     stock: 6,
     image: {
-      url: "/src/assets/products/laptop-1.jpg",
+      url: "/src/assets/products/laptop-1.png",
       alt: 'MacBook Pro 16" M4 Max',
     },
     description:
@@ -125,7 +125,7 @@ export const PRODUCTS: Product[] = [
     priceCents: 199900,
     stock: 13,
     image: {
-      url: "/src/assets/products/laptop-2.jpg",
+      url: "/src/assets/products/laptop-2.png",
       alt: 'MacBook Pro 14" M4 Pro',
     },
     description:
@@ -184,7 +184,7 @@ export const PRODUCTS: Product[] = [
     priceCents: 159900,
     stock: 20,
     image: {
-      url: "/src/assets/products/laptop-3.jpg",
+      url: "/src/assets/products/laptop-3.png",
       alt: 'MacBook Pro 14" M4',
     },
     description:
@@ -243,7 +243,7 @@ export const PRODUCTS: Product[] = [
     priceCents: 119900,
     stock: 8,
     image: {
-      url: "/src/assets/products/laptop-1.jpg",
+      url: "/src/assets/products/laptop-1.png",
       alt: 'MacBook Air 15" M4',
     },
     description:
@@ -302,7 +302,7 @@ export const PRODUCTS: Product[] = [
     priceCents: 99900,
     stock: 15,
     image: {
-      url: "/src/assets/products/laptop-2.jpg",
+      url: "/src/assets/products/laptop-2.png",
       alt: 'MacBook Air 13" M4',
     },
     description:
@@ -364,7 +364,7 @@ export const PRODUCTS: Product[] = [
     priceCents: 84900,
     stock: 22,
     image: {
-      url: "/src/assets/products/laptop-3.jpg",
+      url: "/src/assets/products/laptop-3.png",
       alt: 'MacBook Air 13" M3',
     },
     description:
@@ -423,7 +423,7 @@ export const PRODUCTS: Product[] = [
     priceCents: 129900,
     stock: 12,
     image: {
-      url: "/src/assets/products/laptop-1.jpg",
+      url: "/src/assets/products/laptop-1.png",
       alt: "MSI Prestige 13 AI+ Evo A2VM",
     },
     description:
@@ -484,7 +484,7 @@ export const PRODUCTS: Product[] = [
     priceCents: 119900,
     stock: 16,
     image: {
-      url: "/src/assets/products/laptop-2.jpg",
+      url: "/src/assets/products/laptop-2.png",
       alt: "MSI Katana 15 HX B14V",
     },
     description:
@@ -551,7 +551,7 @@ export const PRODUCTS: Product[] = [
     priceCents: 189900,
     stock: 8,
     image: {
-      url: "/src/assets/products/laptop-3.jpg",
+      url: "/src/assets/products/laptop-3.png",
       alt: "MSI Stealth A16 AI+ A3XV",
     },
     description:
@@ -612,7 +612,7 @@ export const PRODUCTS: Product[] = [
     priceCents: 139900,
     stock: 10,
     image: {
-      url: "/src/assets/products/laptop-1.jpg",
+      url: "/src/assets/products/laptop-1.png",
       alt: "MSI Summit 13 AI+ Evo A2VM",
     },
     description:
@@ -680,7 +680,7 @@ export const PRODUCTS: Product[] = [
     priceCents: 109900,
     stock: 18,
     image: {
-      url: "/src/assets/products/laptop-2.jpg",
+      url: "/src/assets/products/laptop-2.png",
       alt: "ASUS Zenbook 14 OLED (UX3405)",
     },
     description:
@@ -747,7 +747,7 @@ export const PRODUCTS: Product[] = [
     priceCents: 199900,
     stock: 9,
     image: {
-      url: "/src/assets/products/laptop-3.jpg",
+      url: "/src/assets/products/laptop-3.png",
       alt: "ASUS ROG Zephyrus G16 (GU605)",
     },
     description:
@@ -814,7 +814,7 @@ export const PRODUCTS: Product[] = [
     priceCents: 109900,
     stock: 20,
     image: {
-      url: "/src/assets/products/laptop-1.jpg",
+      url: "/src/assets/products/laptop-1.png",
       alt: "ASUS TUF Gaming A15 (FA507)",
     },
     description:
@@ -881,7 +881,7 @@ export const PRODUCTS: Product[] = [
     priceCents: 99900,
     stock: 14,
     image: {
-      url: "/src/assets/products/laptop-2.jpg",
+      url: "/src/assets/products/laptop-2.png",
       alt: "ASUS Vivobook S 15 (S5507)",
     },
     description:
@@ -948,7 +948,7 @@ export const PRODUCTS: Product[] = [
     priceCents: 139900,
     stock: 11,
     image: {
-      url: "/src/assets/products/laptop-3.jpg",
+      url: "/src/assets/products/laptop-3.png",
       alt: "HP Spectre x360 14 (14-eu0000)",
     },
     description:
@@ -1013,7 +1013,7 @@ export const PRODUCTS: Product[] = [
     priceCents: 139900,
     stock: 13,
     image: {
-      url: "/src/assets/products/laptop-1.jpg",
+      url: "/src/assets/products/laptop-1.png",
       alt: "HP OMEN 16 (16-wf0000)",
     },
     description:
@@ -1080,7 +1080,7 @@ export const PRODUCTS: Product[] = [
     priceCents: 99900,
     stock: 17,
     image: {
-      url: "/src/assets/products/laptop-2.jpg",
+      url: "/src/assets/products/laptop-2.png",
       alt: "HP Envy x360 15 (15-fe0000)",
     },
     description:
@@ -1147,7 +1147,7 @@ export const PRODUCTS: Product[] = [
     priceCents: 149900,
     stock: 7,
     image: {
-      url: "/src/assets/products/laptop-3.jpg",
+      url: "/src/assets/products/laptop-3.png",
       alt: "HP OmniBook Ultra Flip 14 (14-fh0000)",
     },
     description:
@@ -1214,7 +1214,7 @@ export const PRODUCTS: Product[] = [
     priceCents: 144900,
     stock: 14,
     image: {
-      url: "/src/assets/products/laptop-1.jpg",
+      url: "/src/assets/products/laptop-1.png",
       alt: 'Galaxy Book4 Pro 14"',
     },
     description:
@@ -1273,7 +1273,7 @@ export const PRODUCTS: Product[] = [
     priceCents: 239900,
     stock: 21,
     image: {
-      url: "/src/assets/products/laptop-2.jpg",
+      url: "/src/assets/products/laptop-2.png",
       alt: "Galaxy Book4 Ultra",
     },
     description:
@@ -1328,7 +1328,7 @@ export const PRODUCTS: Product[] = [
     priceCents: 164900,
     stock: 9,
     image: {
-      url: "/src/assets/products/laptop-3.jpg",
+      url: "/src/assets/products/laptop-3.png",
       alt: "Galaxy Book4 Pro 360",
     },
     description:
@@ -1386,7 +1386,7 @@ export const PRODUCTS: Product[] = [
     priceCents: 119900,
     stock: 16,
     image: {
-      url: "/src/assets/products/phone-1.jpg",
+      url: "/src/assets/products/phone-1.png",
       alt: "iPhone 16 Pro Max",
     },
     description:
@@ -1444,7 +1444,7 @@ export const PRODUCTS: Product[] = [
     category: "Phones",
     priceCents: 99900,
     stock: 23,
-    image: { url: "/src/assets/products/phone-2.jpg", alt: "iPhone 16 Pro" },
+    image: { url: "/src/assets/products/phone-2.png", alt: "iPhone 16 Pro" },
     description:
       "6.3-inch Super Retina XDR with ProMotion, A18 Pro, titanium frame and the same 5x telephoto as the Pro Max.",
     tagline: "Pro cameras in a one-hand size",
@@ -1503,7 +1503,7 @@ export const PRODUCTS: Product[] = [
     category: "Phones",
     priceCents: 89900,
     stock: 11,
-    image: { url: "/src/assets/products/phone-3.jpg", alt: "iPhone 16 Plus" },
+    image: { url: "/src/assets/products/phone-3.png", alt: "iPhone 16 Plus" },
     description:
       "6.7-inch Super Retina XDR, A18 chip, Camera Control and Action button in a colour-infused glass back.",
     tagline: "Large screen, marathon battery",
@@ -1559,7 +1559,7 @@ export const PRODUCTS: Product[] = [
     category: "Phones",
     priceCents: 79900,
     stock: 18,
-    image: { url: "/src/assets/products/phone-1.jpg", alt: "iPhone 16" },
+    image: { url: "/src/assets/products/phone-1.png", alt: "iPhone 16" },
     description:
       "6.1-inch Super Retina XDR, A18 chip, Action button and a vertical dual-camera system for spatial capture.",
     tagline: "A18 speed with Camera Control",
@@ -1611,7 +1611,7 @@ export const PRODUCTS: Product[] = [
     category: "Phones",
     priceCents: 59900,
     stock: 6,
-    image: { url: "/src/assets/products/phone-2.jpg", alt: "iPhone 16e" },
+    image: { url: "/src/assets/products/phone-2.png", alt: "iPhone 16e" },
     description:
       "6.1-inch OLED display, A18 chip, 48MP Fusion camera and Apple's own C1 modem with excellent battery life.",
     tagline: "Modern iPhone essentials, lower price",
@@ -1663,7 +1663,7 @@ export const PRODUCTS: Product[] = [
     category: "Phones",
     priceCents: 84900,
     stock: 13,
-    image: { url: "/src/assets/products/phone-3.jpg", alt: "iPhone 15 Pro" },
+    image: { url: "/src/assets/products/phone-3.png", alt: "iPhone 15 Pro" },
     description:
       "6.1-inch ProMotion display, A17 Pro chip and a light titanium design with a 48MP main camera.",
     tagline: "Titanium flagship at a sharper price",
@@ -1719,7 +1719,7 @@ export const PRODUCTS: Product[] = [
     category: "Phones",
     priceCents: 69900,
     stock: 20,
-    image: { url: "/src/assets/products/phone-1.jpg", alt: "iPhone 15" },
+    image: { url: "/src/assets/products/phone-1.png", alt: "iPhone 15" },
     description:
       "6.1-inch Super Retina XDR with Dynamic Island, A16 Bionic, and a 48MP main camera with 2x zoom.",
     tagline: "Dynamic Island and 48MP for less",
@@ -1771,7 +1771,7 @@ export const PRODUCTS: Product[] = [
     category: "Phones",
     priceCents: 129900,
     stock: 8,
-    image: { url: "/src/assets/products/phone-2.jpg", alt: "Galaxy S25 Ultra" },
+    image: { url: "/src/assets/products/phone-2.png", alt: "Galaxy S25 Ultra" },
     description:
       "6.9-inch Dynamic AMOLED 2X, Snapdragon 8 Elite for Galaxy, titanium frame and a 200MP quad camera with 100x Space Zoom.",
     tagline: "200MP zoom king with built-in S Pen",
@@ -1823,7 +1823,7 @@ export const PRODUCTS: Product[] = [
     category: "Phones",
     priceCents: 99900,
     stock: 15,
-    image: { url: "/src/assets/products/phone-3.jpg", alt: "Galaxy S25+" },
+    image: { url: "/src/assets/products/phone-3.png", alt: "Galaxy S25+" },
     description:
       "6.7-inch QHD+ Dynamic AMOLED 2X, Snapdragon 8 Elite and a 50MP triple camera with 3x optical zoom.",
     tagline: "Big screen flagship without the pen",
@@ -1875,7 +1875,7 @@ export const PRODUCTS: Product[] = [
     category: "Phones",
     priceCents: 79900,
     stock: 22,
-    image: { url: "/src/assets/products/phone-1.jpg", alt: "Galaxy S25" },
+    image: { url: "/src/assets/products/phone-1.png", alt: "Galaxy S25" },
     description:
       "6.2-inch Dynamic AMOLED 2X at 120Hz, Snapdragon 8 Elite and a 50MP triple camera in a pocketable body.",
     tagline: "Compact Galaxy AI flagship",
@@ -1927,7 +1927,7 @@ export const PRODUCTS: Product[] = [
     category: "Phones",
     priceCents: 189900,
     stock: 10,
-    image: { url: "/src/assets/products/phone-2.jpg", alt: "Galaxy Z Fold6" },
+    image: { url: "/src/assets/products/phone-2.png", alt: "Galaxy Z Fold6" },
     description:
       "7.6-inch foldable main screen and 6.3-inch cover display, Snapdragon 8 Gen 3 and three-app multitasking.",
     tagline: "A phone that opens into a tablet",
@@ -1979,7 +1979,7 @@ export const PRODUCTS: Product[] = [
     category: "Phones",
     priceCents: 109900,
     stock: 17,
-    image: { url: "/src/assets/products/phone-3.jpg", alt: "Galaxy Z Flip6" },
+    image: { url: "/src/assets/products/phone-3.png", alt: "Galaxy Z Flip6" },
     description:
       "6.7-inch foldable display, 3.4-inch FlexWindow cover screen, Snapdragon 8 Gen 3 and a new 50MP main camera.",
     tagline: "Pocket-sized flip with a 50MP camera",
@@ -2031,7 +2031,7 @@ export const PRODUCTS: Product[] = [
     category: "Phones",
     priceCents: 44900,
     stock: 24,
-    image: { url: "/src/assets/products/phone-1.jpg", alt: "Galaxy A56 5G" },
+    image: { url: "/src/assets/products/phone-1.png", alt: "Galaxy A56 5G" },
     description:
       "6.7-inch Super AMOLED at 120Hz, Exynos 1580, 50MP triple camera and six years of OS updates.",
     tagline: "Flagship looks at a mid-range price",
@@ -2083,7 +2083,7 @@ export const PRODUCTS: Product[] = [
     category: "Phones",
     priceCents: 99900,
     stock: 12,
-    image: { url: "/src/assets/products/phone-2.jpg", alt: "Pixel 9 Pro" },
+    image: { url: "/src/assets/products/phone-2.png", alt: "Pixel 9 Pro" },
     description:
       "6.3-inch Super Actua display, Google Tensor G4, 50MP main, 48MP ultrawide and 48MP 5x telephoto cameras.",
     tagline: "Google AI with a pro triple camera",
@@ -2135,7 +2135,7 @@ export const PRODUCTS: Product[] = [
     category: "Phones",
     priceCents: 109900,
     stock: 19,
-    image: { url: "/src/assets/products/phone-3.jpg", alt: "Pixel 9 Pro XL" },
+    image: { url: "/src/assets/products/phone-3.png", alt: "Pixel 9 Pro XL" },
     description:
       "6.8-inch Super Actua display at up to 3000 nits, Tensor G4 and the full Pro camera system with 30x Super Res Zoom.",
     tagline: "Bigger Pixel, bigger battery",
@@ -2187,7 +2187,7 @@ export const PRODUCTS: Product[] = [
     category: "Phones",
     priceCents: 79900,
     stock: 7,
-    image: { url: "/src/assets/products/phone-1.jpg", alt: "Pixel 9" },
+    image: { url: "/src/assets/products/phone-1.png", alt: "Pixel 9" },
     description:
       "6.3-inch Actua display, Tensor G4, 50MP main and 48MP ultrawide cameras in a satin aluminium frame.",
     tagline: "The helpful everyday Pixel",
@@ -2239,7 +2239,7 @@ export const PRODUCTS: Product[] = [
     category: "Phones",
     priceCents: 49900,
     stock: 14,
-    image: { url: "/src/assets/products/phone-2.jpg", alt: "Pixel 9a" },
+    image: { url: "/src/assets/products/phone-2.png", alt: "Pixel 9a" },
     description:
       "6.3-inch Actua display, Tensor G4, 48MP main camera and the biggest battery ever in an A-series Pixel.",
     tagline: "Pixel camera magic for less",
@@ -2292,7 +2292,7 @@ export const PRODUCTS: Product[] = [
     priceCents: 54900,
     stock: 21,
     image: {
-      url: "/src/assets/products/audio-1.jpg",
+      url: "/src/assets/products/audio-1.png",
       alt: "AirPods Max (USB-C)",
     },
     description:
@@ -2346,7 +2346,7 @@ export const PRODUCTS: Product[] = [
     category: "Audio",
     priceCents: 24900,
     stock: 9,
-    image: { url: "/src/assets/products/audio-2.jpg", alt: "AirPods Pro 2" },
+    image: { url: "/src/assets/products/audio-2.png", alt: "AirPods Pro 2" },
     description:
       "H2 chip with Adaptive Audio, up to 2x more Active Noise Cancellation, hearing health features and a USB-C MagSafe case.",
     tagline: "Class-leading noise cancelling earbuds",
@@ -2399,7 +2399,7 @@ export const PRODUCTS: Product[] = [
     priceCents: 17900,
     stock: 16,
     image: {
-      url: "/src/assets/products/audio-1.jpg",
+      url: "/src/assets/products/audio-1.png",
       alt: "AirPods 4 with Active Noise Cancellation",
     },
     description:
@@ -2457,7 +2457,7 @@ export const PRODUCTS: Product[] = [
     category: "Audio",
     priceCents: 12900,
     stock: 23,
-    image: { url: "/src/assets/products/audio-2.jpg", alt: "AirPods 4" },
+    image: { url: "/src/assets/products/audio-2.png", alt: "AirPods 4" },
     description:
       "Open-fit design with H2 chip, Personalised Spatial Audio and the smallest AirPods case yet, charged over USB-C.",
     tagline: "Simple, comfy everyday AirPods",
@@ -2512,7 +2512,7 @@ export const PRODUCTS: Product[] = [
     category: "Audio",
     priceCents: 39900,
     stock: 11,
-    image: { url: "/src/assets/products/audio-1.jpg", alt: "Sony WH-1000XM5" },
+    image: { url: "/src/assets/products/audio-1.png", alt: "Sony WH-1000XM5" },
     description:
       "Eight microphones and two processors for industry-leading noise cancelling, 30mm carbon-fibre drivers and 30-hour battery.",
     tagline: "Benchmark noise cancelling headphones",
@@ -2564,7 +2564,7 @@ export const PRODUCTS: Product[] = [
     category: "Audio",
     priceCents: 29900,
     stock: 18,
-    image: { url: "/src/assets/products/audio-2.jpg", alt: "Sony WF-1000XM5" },
+    image: { url: "/src/assets/products/audio-2.png", alt: "Sony WF-1000XM5" },
     description:
       "Integrated Processor V2 and HD Noise Cancelling QN2e, 8.4mm Dynamic Driver X and LDAC Hi-Res Audio Wireless.",
     tagline: "Sony's smallest, best ANC earbuds",
@@ -2620,7 +2620,7 @@ export const PRODUCTS: Product[] = [
     category: "Audio",
     priceCents: 19900,
     stock: 6,
-    image: { url: "/src/assets/products/audio-1.jpg", alt: "Sony ULT WEAR" },
+    image: { url: "/src/assets/products/audio-1.png", alt: "Sony ULT WEAR" },
     description:
       "ULT button for deep bass, dual noise sensor ANC, 30-hour battery and soft fit leather ear pads.",
     tagline: "Massive bass at the push of a button",
@@ -2673,7 +2673,7 @@ export const PRODUCTS: Product[] = [
     priceCents: 17900,
     stock: 13,
     image: {
-      url: "/src/assets/products/audio-2.jpg",
+      url: "/src/assets/products/audio-2.png",
       alt: "Sony LinkBuds Fit",
     },
     description:
@@ -2731,7 +2731,7 @@ export const PRODUCTS: Product[] = [
     category: "Audio",
     priceCents: 24900,
     stock: 20,
-    image: { url: "/src/assets/products/audio-1.jpg", alt: "Galaxy Buds3 Pro" },
+    image: { url: "/src/assets/products/audio-1.png", alt: "Galaxy Buds3 Pro" },
     description:
       "Adaptive ANC, two-way speakers with 24-bit Hi-Fi sound and a Blade Light stem that responds to pinch and swipe.",
     tagline: "Blade-light design with smart ANC",
@@ -2783,7 +2783,7 @@ export const PRODUCTS: Product[] = [
     category: "Audio",
     priceCents: 17900,
     stock: 8,
-    image: { url: "/src/assets/products/audio-2.jpg", alt: "Galaxy Buds3" },
+    image: { url: "/src/assets/products/audio-2.png", alt: "Galaxy Buds3" },
     description:
       "Open-type design with Active Noise Cancellation, 12mm drivers and pinch controls on the stem.",
     tagline: "Open-type comfort with ANC",
@@ -2835,7 +2835,7 @@ export const PRODUCTS: Product[] = [
     category: "Audio",
     priceCents: 9900,
     stock: 15,
-    image: { url: "/src/assets/products/audio-1.jpg", alt: "Galaxy Buds FE" },
+    image: { url: "/src/assets/products/audio-1.png", alt: "Galaxy Buds FE" },
     description:
       "Active Noise Cancellation, a single 12mm driver with deep bass and wing tips for a secure fit.",
     tagline: "Punchy sound, friendly price",
@@ -2887,7 +2887,7 @@ export const PRODUCTS: Product[] = [
     category: "Audio",
     priceCents: 5900,
     stock: 22,
-    image: { url: "/src/assets/products/audio-2.jpg", alt: "Galaxy Buds Core" },
+    image: { url: "/src/assets/products/audio-2.png", alt: "Galaxy Buds Core" },
     description:
       "Active Noise Cancellation, wing-tip fit and up to 35 hours of listening with the case.",
     tagline: "Essential ANC earbuds for every day",
@@ -2940,7 +2940,7 @@ export const PRODUCTS: Product[] = [
     priceCents: 79900,
     stock: 10,
     image: {
-      url: "/src/assets/products/wearable-1.jpg",
+      url: "/src/assets/products/wearable-1.png",
       alt: "Apple Watch Ultra 2",
     },
     description:
@@ -2998,7 +2998,7 @@ export const PRODUCTS: Product[] = [
     priceCents: 42900,
     stock: 17,
     image: {
-      url: "/src/assets/products/wearable-2.jpg",
+      url: "/src/assets/products/wearable-2.png",
       alt: "Apple Watch Series 10 46mm",
     },
     description:
@@ -3053,7 +3053,7 @@ export const PRODUCTS: Product[] = [
     priceCents: 39900,
     stock: 24,
     image: {
-      url: "/src/assets/products/wearable-1.jpg",
+      url: "/src/assets/products/wearable-1.png",
       alt: "Apple Watch Series 10 42mm",
     },
     description:
@@ -3108,7 +3108,7 @@ export const PRODUCTS: Product[] = [
     priceCents: 24900,
     stock: 12,
     image: {
-      url: "/src/assets/products/wearable-2.jpg",
+      url: "/src/assets/products/wearable-2.png",
       alt: "Apple Watch SE",
     },
     description:
@@ -3163,7 +3163,7 @@ export const PRODUCTS: Product[] = [
     priceCents: 349900,
     stock: 19,
     image: {
-      url: "/src/assets/products/wearable-1.jpg",
+      url: "/src/assets/products/wearable-1.png",
       alt: "Apple Vision Pro",
     },
     description:

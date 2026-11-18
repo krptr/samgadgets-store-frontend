@@ -11,10 +11,7 @@ interface ProductCardProps {
 
 function ProductCard({ product }: ProductCardProps) {
   return (
-    <article
-      className="relative flex flex-col items-center justify-center gap-6 group bg-primary/15 
-    py-4 rounded-tl-4xl rounded-br-4xl rounded-tr-[4rem] rounded-bl-[4rem] focus-within:ring-2 focus-within:ring-primary"
-    >
+    <article className="relative flex flex-col items-center justify-center gap-6 group border px-4 py-4 rounded-tl-[4rem] rounded-br-[4rem] rounded-tr-4xl rounded-bl-4xl">
       <div className="flex flex-col items-center justify-center">
         <div className="flex items-center justify-center gap-2 font-mono text-[10px] uppercase tracking-[0.18em] opacity-80">
           <span>{product.brand}</span>
@@ -39,13 +36,13 @@ function ProductCard({ product }: ProductCardProps) {
         </span>
       </div>
 
-      <div className="relative shrink-0 size-50 rounded-full bg-primary/35 flex items-center justify-center overflow-hidden">
+      <div className="relative shrink-0 size-50 rounded-full bg-primary/70 flex items-center justify-center">
         <img
           src={product.image.url}
           alt={product.image.alt}
-          className="object-contain drop-shadow-2xl scale-130 transition-transform duration-500 ease-out group-hover:scale-135"
+          className="object-contain drop-shadow-2xl transition-transform duration-500 ease-out group-hover:scale-110"
         />
-        <div className="absolute -right-8 top-1/2 -translate-y-1/2 px-2.5 py-1 rounded-md bg-primary text-on-primary text-sm font-bold tabular-nums">
+        <div className="dark absolute -right-8 top-1/2 -translate-y-1/2 px-2.5 py-1 rounded-md bg-warning text-on-warning text-sm font-bold tabular-nums">
           {formatPrice(product.priceCents)}
         </div>
       </div>

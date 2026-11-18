@@ -7,7 +7,7 @@ interface StarRatingProps {
 
 function StarRating({
   rating,
-  className = "text-warning/50 text-md",
+  className = "dark text-warning text-md",
 }: StarRatingProps) {
   return (
     <div className="flex items-center gap-1">

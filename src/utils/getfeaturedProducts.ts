@@ -1,10 +1,10 @@
 import { PRODUCTS, type Product } from "../products";
 
 const FEATURED_NEW_ARRIVALS_IDS = [
-  "macbook-air-15",
+  "macbook-air-13",
   "iphone-16e",
   "apple-watch-series-10",
-  "airpods-4-anc",
+  "airpods-4",
 ];
 
 const FEATURED_BEST_SELLERS_IDS = [
